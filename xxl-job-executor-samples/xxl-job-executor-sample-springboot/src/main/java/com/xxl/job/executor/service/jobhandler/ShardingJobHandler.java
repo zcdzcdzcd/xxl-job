@@ -31,6 +31,7 @@ public class ShardingJobHandler extends IJobHandler {
 				XxlJobLogger.log("第 {} 片, 忽略", i);
 			}
 		}
+		XxlJobLogger.log("参数{}",param);
 
 		return SUCCESS;
 	}

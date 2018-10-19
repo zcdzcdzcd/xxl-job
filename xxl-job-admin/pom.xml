@@ -144,4 +144,7 @@
 
 	</dependencies>
 
+	<build>
+		<finalName>xxl-job</finalName>
+	</build>
 </project>

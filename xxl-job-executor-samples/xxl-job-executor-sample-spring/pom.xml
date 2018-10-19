@@ -36,4 +36,7 @@
 		</dependency>
 	</dependencies>
 
+	<build>
+		<finalName>executor-sample-spring1</finalName>
+	</build>
 </project>

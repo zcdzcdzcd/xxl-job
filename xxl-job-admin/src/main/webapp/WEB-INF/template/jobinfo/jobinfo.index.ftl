@@ -176,7 +176,6 @@
 							<button type="button" class="btn btn-default" data-dismiss="modal">${I18n.system_cancel}</button>
 						</div>
 					</div>
-
 <input type="hidden" name="glueRemark" value="GLUE代码初始化" >
 <textarea name="glueSource" style="display:none;" ></textarea>
 <textarea class="glueSource_java" style="display:none;" >

@@ -1,5 +1,6 @@
 package com.xxl.job.admin.controller;
 
+import com.xxl.job.admin.controller.annotation.PermessionLimit;
 import com.xxl.job.admin.core.model.XxlJobGroup;
 import com.xxl.job.admin.core.model.XxlJobInfo;
 import com.xxl.job.admin.core.route.ExecutorRouteStrategyEnum;
@@ -48,8 +49,9 @@ public class JobInfoController {
 
 		return "jobinfo/jobinfo.index";
 	}
-	
+	//http://localhost:8080/xxl-job/jobinfo/pageList?jobGroup=2&jobDesc=&executorHandler=&start=0&length=10
 	@RequestMapping("/pageList")
+	@PermessionLimit(limit = false)
 	@ResponseBody
 	public Map<String, Object> pageList(@RequestParam(required = false, defaultValue = "0") int start,  
 			@RequestParam(required = false, defaultValue = "10") int length,
